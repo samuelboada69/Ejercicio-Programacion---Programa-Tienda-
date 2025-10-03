@@ -10,16 +10,16 @@ int main(){
     int cantidad;
     float ganancias = 0;
 
-    printf("Ingrese ID del producto: ");
+    printf("Ingresa el ID del producto: ");
     scanf("%d",&id);
 
-    printf("Ingrese nombre del producto (una sola palabra): ");
+    printf("Ingrese nombre del producto: ");
     scanf("%s",nombre);
 
-    printf("Ingrese stock inicial: ");
+    printf("Ingrese el stock inicial: ");
     scanf("%d",&stock);
 
-    printf("Ingrese precio unitario: ");
+    printf("Ingrese precio por unidad: ");
     scanf("%f",&precio);
 
     while(opcion != 5){
@@ -37,14 +37,14 @@ int main(){
             if(cantidad<=stock){
                 stock = stock - cantidad;
                 ganancias = ganancias + (cantidad * precio);
-                printf("Venta realizada.\n");
+                printf("Venta Completada.\n");
             } else {
                 printf("No hay suficiente stock.\n");
             }
         }
 
         if(opcion==2){
-            printf("Cuantas unidades agrega: ");
+            printf("Cuantas unidades quieres agrega: ");
             scanf("%d",&cantidad);
             stock = stock + cantidad;
             printf("Stock actualizado.\n");
@@ -68,4 +68,5 @@ int main(){
 
     return 0;
 }
+
 
