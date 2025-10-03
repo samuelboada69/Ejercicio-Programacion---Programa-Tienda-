@@ -32,7 +32,7 @@ int main(){
         scanf("%d",&opcion);
 
         if(opcion==1){
-            printf("Que cantidad quieres vender?: ");
+            printf("Que cantidad quieres vender? : ");
             scanf("%d",&cantidad);
             if(cantidad<=stock){
                 stock = stock - cantidad;
@@ -68,6 +68,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
