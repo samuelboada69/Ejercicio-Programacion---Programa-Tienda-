@@ -13,13 +13,13 @@ int main(){
     printf("Ingresa el ID del producto: ");
     scanf("%d",&id);
 
-    printf("Ingrese nombre del producto: ");
+    printf("Ingresa nombre del producto: ");
     scanf("%s",nombre);
 
-    printf("Ingrese el stock inicial: ");
+    printf("Ingresa el stock inicial: ");
     scanf("%d",&stock);
 
-    printf("Ingrese precio por unidad: ");
+    printf("Ingresa precio por unidad: ");
     scanf("%f",&precio);
 
     while(opcion != 5){
@@ -32,7 +32,7 @@ int main(){
         scanf("%d",&opcion);
 
         if(opcion==1){
-            printf("Cantidad a vender: ");
+            printf("Que cantidad quieres vender?: ");
             scanf("%d",&cantidad);
             if(cantidad<=stock){
                 stock = stock - cantidad;
@@ -58,15 +58,16 @@ int main(){
         }
 
         if(opcion==4){
-            printf("Ganancias: %.2f\n",ganancias);
+            printf("Ganancias Obtenidas: %.2f\n",ganancias);
         }
 
         if(opcion==5){
-            printf("Saliendo...\n");
+            printf("Saliendo Del Programa\n");
         }
     }
 
     return 0;
 }
+
 
 
